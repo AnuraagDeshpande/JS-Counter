@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1732484269142-50a81554221c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    font-family: "DM Sans", serif;
+    margin: 0;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*aligns horizontally in the center*/
+    justify-content: center; /*aligns vertically in the center*/
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: -23rem; /*place it closer to the top*/
+    position: fixed; /*fixes the position wrt the viewport*/
+}
+
+.counter-container {
+    margin-bottom: -1rem;
+    display: flex;
+}
+
+.counter-numbers {
+    font-size: 6rem;
+    line-height: 1; /*This means in horizontal writing, that the height of the line will be 1 times the font size*/
+    margin: 0 2rem; /*margin of 2rem to the left and right of each number*/
+}
+
+.counter-elem { /*class made to target each counter element (Days, hours, etc.) so the div and span elements can be
+    centered below each other*/
+    text-align: center;
+}
+
+.counter-elem span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
